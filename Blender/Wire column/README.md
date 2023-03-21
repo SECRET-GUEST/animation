@@ -10,7 +10,7 @@ BLENDER | Python script
  ╚═════╝╚═╝  ╚═╝╚═════╝ ╚══════╝╚══════╝╚══════╝
                                                 
 ```
-![cables](https://user-images.githubusercontent.com/92639080/226735432-04982efb-1836-402b-8a18-e64a910d647f.gif)
+
 
 # Description:
 This script provides a way to generate a bundle of intertwined cables in Blender, like to simulate guts or cyberpunk / biopunk cables column,...  
@@ -21,6 +21,7 @@ The points are generated based on a start and end position, with an additional n
 
 You can customize various parameters, such as the number of cables, thickness of the cables, and the noise factor, to achieve the desired look for their character.
 
+![cables](https://user-images.githubusercontent.com/92639080/226735432-04982efb-1836-402b-8a18-e64a910d647f.gif)
 
 # features:
 
