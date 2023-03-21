@@ -1,3 +1,16 @@
+Python & C++
+
+```
+ █████╗ ███╗   ██╗██╗███╗   ███╗ █████╗ ████████╗██╗ ██████╗ ███╗   ██╗
+██╔══██╗████╗  ██║██║████╗ ████║██╔══██╗╚══██╔══╝██║██╔═══██╗████╗  ██║
+███████║██╔██╗ ██║██║██╔████╔██║███████║   ██║   ██║██║   ██║██╔██╗ ██║
+██╔══██║██║╚██╗██║██║██║╚██╔╝██║██╔══██║   ██║   ██║██║   ██║██║╚██╗██║
+██║  ██║██║ ╚████║██║██║ ╚═╝ ██║██║  ██║   ██║   ██║╚██████╔╝██║ ╚████║
+╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝╚═╝     ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═╝ ╚═════╝ ╚═╝  ╚═══╝
+                                                                       
+
+```
+
 # 3D and 2D Object Generation Scripts
 
 This repository contains a collection of scripts for generating 3D and 2D objects in various creative software, such as Blender, Unreal Engine, Adobe Suite, RPG Maker, and more. The scripts are designed to help artists and developers quickly create assets for their projects.
@@ -27,15 +40,11 @@ To use the scripts in this repository, follow these general steps:
 
 Please refer to the README files in each software-specific folder for detailed instructions on how to use the scripts with that particular software.
 
-## :raising_hand: Contributing
-
-We welcome contributions to this repository! If you have a script that you'd like to share, please feel free to create a pull request or open an issue to discuss your idea. We appreciate any help in expanding and improving this collection of scripts.
-
 ## :scroll: License
 
 This repository is released under the [MIT License](LICENSE). Please see the `LICENSE` file for more information.
 
 ## :question: Support & Questions
 
-If you have any questions or need support, please feel free to open an issue or join our community Discord server (link).
+If you have any questions or need support, please feel free to open an issue or join my twitter.
 
