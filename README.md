@@ -10,12 +10,11 @@ This repository contains a collection of scripts for generating 3D and 2D object
 
 ## :file_folder: Repository Structure
 
-- `blender_scripts/` - Scripts for generating objects in Blender
-- `unreal_engine_scripts/` - Scripts for generating objects in Unreal Engine
-- `adobe_suite_scripts/` - Scripts for generating objects in Adobe Suite (e.g., Photoshop, Illustrator)
-- `rpg_maker_scripts/` - Scripts for generating objects in RPG Maker
-- `other_software_scripts/` - Scripts for generating objects in other creative software
-- `README.md` - This file, providing an overview of the repository
+- `blender` - Scripts for generating objects in Blender
+- `Unreal` - Scripts for generating objects in Unreal Engine
+- `2D` - Scripts for generating objects in 2D software like Photoshop
+- `Gaming` - Scripts for generating objects in RPG Maker, tiles, ....
+- `Others` - Scripts for generating objects in other creative software
 
 ## :arrow_down: Installation & Usage
 
