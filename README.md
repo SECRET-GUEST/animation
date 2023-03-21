@@ -7,7 +7,6 @@ This repository contains a collection of scripts for generating 3D and 2D object
 - :star2: A wide range of scripts for generating 3D and 2D objects, including characters, props, environments, and more
 - :wrench: Scripts tailored for various creative software, including Blender, Unreal Engine, Adobe Suite, RPG Maker, and others
 - :zap: Easily customizable and adaptable to suit your specific project needs
-- :mag: Optimized for SEO with relevant keywords to make it easy for users to find the perfect script for their project
 
 ## :file_folder: Repository Structure
 
