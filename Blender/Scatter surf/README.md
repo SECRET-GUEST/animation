@@ -40,6 +40,5 @@ part_names = ('1', 'Cable', 'wire')
 num_parts = 5
 use_symmetry = True
 mech_parts = generate_mech_parts(character, part_names, num_parts, use_symmetry)
-
+```
 ![pic0028](https://user-images.githubusercontent.com/92639080/227416016-489fce69-db28-4dd8-a8c3-65548ed2c028.png)
-
