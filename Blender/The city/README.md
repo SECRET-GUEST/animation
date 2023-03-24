@@ -13,3 +13,6 @@ Blender 3.4 | Python
 # Coming soon
 
 A building and city builder
+
+
+![bugcity](https://user-images.githubusercontent.com/92639080/227610263-2371708e-f87e-4b6a-88ac-b3ea3de8b7a3.gif)
