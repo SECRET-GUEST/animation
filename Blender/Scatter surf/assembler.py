@@ -69,12 +69,12 @@
 #                                                                                                                              |                               |     |                                   |                               |     |                                   |                               |          |                                   |                               |
 #               |                             /                 \                          |                                                                              |                               |     |                                   |                               |     |                                   |                               |          |                                   |                               |
                 
-#       |                                This script allows Blender to 
+#       |                            This python script allows Blender to 
                 
-#                                 randomly generate objects from selected              |                                           |               |                                           |               |                                           |                    |                                           |
+#                            randomly generate objects duplicated from selected              |                                           |               |                                           |               |                                           |                    |                                           |
                 
 #                          /                      |    v    |                    \
-#                  objects on a selected objects (like for example needles on a character) 
+#                     objects on 1 selected object surface like a  character or whatever
 #                                  |                                |                                          |      |                                |                                          |      |                                |                                          |           |                                |
 #                                                                                                   |                                                                 |                      |                     |                       |                      |                     |                       |                      |                     |                            |
 #          
