@@ -125,11 +125,23 @@ import bpy
 
 
 
+
+
+
+
+
+
+
+
+
+
 #____ ____ ___ ___ _ _  _ ____ ____ 
 #[__  |___  |   |  | |\ | | __ [__  
 #___] |___  |   |  | | \| |__] ___] 
                                    
 
+ # Here you can change the value if you need 
+  
 
 wire_color_hex = "#ff006e"          #Hexadecimal code for wireframe color (https://coolors.co/)
 
@@ -138,6 +150,17 @@ glow_intensity = 100                #Intensity of the wireframe glow + is +
 background_color = (0, 0, 0, 1)     #Change background color in RGBAlpha (last value is for opacity set it between 0 & 1)
 
 the_thickness = 0.001               #Thickness of the wireframe 
+
+
+
+
+
+
+
+
+
+
+
 
 
 #___  ____ _ _ _ ____ ____    ___  _    ____ _  _ ___
