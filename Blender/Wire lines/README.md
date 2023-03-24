@@ -14,6 +14,9 @@ Blender 3.4 | Python
 
 This script adds wireframe modifiers and materials to all mesh objects in a Blender scene. The wireframe material can be customized by changing the wire_color_hex and glow_intensity parameters at the top of the script. The wireframe is created using nodes in the material editor, allowing for flexibility in adjusting its appearance. The script also creates a new view layer specifically for the wireframe, making it easy to switch between viewing the wireframe and the normal render. 
 
+![dsfs](https://user-images.githubusercontent.com/92639080/227446618-95926cdd-c7ef-4ef9-ad67-1c7107ea4525.png)
+
+
 # Features:
 - Customizable wireframe color and glow intensity
 - Uses nodes in the material editor to create the wireframe
