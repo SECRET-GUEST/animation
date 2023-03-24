@@ -26,7 +26,7 @@ This script adds wireframe modifiers and materials to all mesh objects in a Blen
 ![0](https://user-images.githubusercontent.com/92639080/227445843-8e3ecf4a-091a-4539-919e-42611a630a10.gif)
 
 # Usage:
-1. Open Blender and open the Python console
+1. Open Blender and open the Python console in the "scripting" last tab
 2. Copy and paste the script into the console and press enter
 3. The wireframe will be applied to all mesh objects in the scene and a new view layer for the wireframe will be created
 4. To switch between viewing the wireframe and the normal render, select the appropriate view layer in the top-right corner of the Blender window
