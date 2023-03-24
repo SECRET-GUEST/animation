@@ -8,6 +8,10 @@ BLENDER 3.4 | Python API script
 ╚══════╝ ╚═════╝╚═╝  ╚═╝   ╚═╝      ╚═╝   ╚══════╝╚═╝  ╚═╝╚══════╝ ╚═════╝ ╚═╝  ╚═╝╚═╝     
                                                                                            
 ```
+
+![0](https://user-images.githubusercontent.com/92639080/227415938-a9d36c28-de02-441a-b488-263681bd02e0.gif)
+
+
 # Blender script to generate random Parts on character/object surface
 
 This script is designed for use in the Blender 3D modeling and animation software. It generates mechanical parts on the surface of a character object using a specified list of part names. The generated parts can be symmetrical or asymmetrical, depending on the user's preference.
@@ -36,3 +40,6 @@ part_names = ('1', 'Cable', 'wire')
 num_parts = 5
 use_symmetry = True
 mech_parts = generate_mech_parts(character, part_names, num_parts, use_symmetry)
+
+![pic0028](https://user-images.githubusercontent.com/92639080/227416016-489fce69-db28-4dd8-a8c3-65548ed2c028.png)
+
