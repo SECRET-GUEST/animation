@@ -27,7 +27,7 @@ This script adds wireframe modifiers and materials to all mesh objects in a Blen
 
 # Usage:
 1. Open Blender and open the Python console in the "scripting" last tab
-2. Create new script, paste the script.py in then run it by clicking on the "play" button.
+2. Create new script, paste the wirelines.py in then run it by clicking on the "play" button.
 3. You can easily ctrl+Z to make changes or go in the settings
 4. The wireframe will be applied to all mesh objects in the scene and a new view layer for the wireframe will be created
 5. To switch between viewing the wireframe and the normal render, select the appropriate view layer in the top-right corner of the Blender window
