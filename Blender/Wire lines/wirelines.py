@@ -137,6 +137,7 @@ import bpy
 
 wire_color_hex = "#ff006e"          #Hexadecimal code for wireframe color (https://coolors.co/)
 glow_intensity = 100                #Intensity of the wireframe glow + is +
+background_color = (0, 0, 0, 1)     #Change background color in RGBAlpha (last value is for opacity set it between 0 & 1)
 
 
 
@@ -146,6 +147,17 @@ glow_intensity = 100                #Intensity of the wireframe glow + is +
 #|    |__| |_|_| |___ |  \    |    |___ |  | | \|  |
                
 #OPENING | https://www.youtube.com/watch?v=_85LaeTCtV8 :3
+
+
+
+#Define variable for the background
+world = bpy.context.scene.world
+
+#Modify background in choosen color
+world.use_nodes = True
+bg_node = world.node_tree.nodes.new(type='ShaderNodeBackground')
+bg_node.inputs[0].default_value = background_color
+world.node_tree.links.new(bg_node.outputs[0], world.node_tree.nodes['World Output'].inputs['Surface'])
 
 
 
@@ -279,6 +291,8 @@ def main():
 
             #Apply the wireframe material to the mesh
             apply_wireframe_material(obj, wire_mat)
+
+
 
 
 if __name__ == "__main__":
