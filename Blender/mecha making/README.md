@@ -8,6 +8,9 @@ BLENDER | Python API script
 ╚═╝     ╚═╝╚══════╝ ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝    ╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝        ╚═════╝ ╚══════╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝
 ```
 
+
+# NOT COMPLETE PLEASE WAIT I WILL RELEASE A BETTER VERSION SOON
+
 # Description
 
 This script generates a number of mech parts at random surface locations on a character object in Blender, and optionally creates mirrored copies of the parts. 
