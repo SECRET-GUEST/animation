@@ -125,21 +125,19 @@ import bpy
 
 
 
-#  ███████╗███████╗████████╗████████╗██╗███╗   ██╗ ██████╗ ███████╗  #
-#  ██╔════╝██╔════╝╚══██╔══╝╚══██╔══╝██║████╗  ██║██╔════╝ ██╔════╝  #
-#  ███████╗█████╗     ██║      ██║   ██║██╔██╗ ██║██║  ███╗███████╗  #
-#  ╚════██║██╔══╝     ██║      ██║   ██║██║╚██╗██║██║   ██║╚════██║  #
-#  ███████║███████╗   ██║      ██║   ██║██║ ╚████║╚██████╔╝███████║  #
-#  ╚══════╝╚══════╝   ╚═╝      ╚═╝   ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚══════╝  #
-                                                                
-
+#____ ____ ___ ___ _ _  _ ____ ____ 
+#[__  |___  |   |  | |\ | | __ [__  
+#___] |___  |   |  | | \| |__] ___] 
+                                   
 
 
 wire_color_hex = "#ff006e"          #Hexadecimal code for wireframe color (https://coolors.co/)
+
 glow_intensity = 100                #Intensity of the wireframe glow + is +
+
 background_color = (0, 0, 0, 1)     #Change background color in RGBAlpha (last value is for opacity set it between 0 & 1)
 
-
+the_thickness = 0.001               #Thickness of the wireframe 
 
 
 #___  ____ _ _ _ ____ ____    ___  _    ____ _  _ ___
@@ -176,7 +174,7 @@ def create_wireframe_modifier(obj):
     wireframe_mod = obj.modifiers.new("Wireframe", "WIREFRAME")
     wireframe_mod.use_replace = False
     wireframe_mod.material_offset = 1
-    wireframe_mod.thickness = 0.01
+    wireframe_mod.thickness = the_thickness
     wireframe_mod.use_even_offset = False #You can comment this line if you don't have issues with thickness "even" box in "modifiers"
 
 
