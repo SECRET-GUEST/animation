@@ -310,7 +310,7 @@ def generate_mech_parts(character, part_names, num_parts, use_symmetry):
 
 #Parameters :
 character = bpy.data.objects['character']   #Choose the object where will be generated/ duplicated the objects  
-part_names = ('1', '2', '3')                #Choose objects you want to generate (you can use collections here)
+part_names = ('1', '2', '3')                #Choose objects you want to generate (you can use collections name here)
 num_parts = 5                               #Choose number max you can generate
 use_symmetry = True                         #Choose if you want to use symmetry
 
