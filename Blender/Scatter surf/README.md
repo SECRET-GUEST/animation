@@ -41,4 +41,5 @@ num_parts = 5
 use_symmetry = True
 mech_parts = generate_mech_parts(character, part_names, num_parts, use_symmetry)
 ```
-![pic0028](https://user-images.githubusercontent.com/92639080/227416016-489fce69-db28-4dd8-a8c3-65548ed2c028.png)
+![pic0028](https://user-images.githubusercontent.com/92639080/227416475-3efb4c08-d8f3-417f-a621-acdf944027b1.png)
+
