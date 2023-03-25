@@ -1,4 +1,4 @@
-BLENDER | Python script
+BLENDER 3.4 | Python 10.8
 
 ```
 
