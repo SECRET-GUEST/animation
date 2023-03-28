@@ -71,10 +71,10 @@
                 
 #        |                                This script allows Blender to 
                 
-#                                  generate a column of cables for cyberpunk              |                                           |               |                                           |               |                                           |                    |                                           |
+#                                set a thickness modifier to a selected object              |                                           |               |                                           |               |                                           |                    |                                           |
                 
 #                           /                      |    v    |                    \
-#                      Characters, for the body, the neck or whatever else you could want 
+#                       like if you want to make skin in a script or whatever you need
 #                                   |                                |                                          |      |                                |                                          |      |                                |                                          |           |                                |
 #                                                                                                    |                                                                 |                      |                     |                       |                      |                     |                       |                      |                     |                            |
 #           
