@@ -9,6 +9,9 @@ BLENDER 3.5 | Python 10.9
                                                                                                                        
 ```
 
+![wheelcables](https://user-images.githubusercontent.com/92639080/229262992-3a96680b-9a16-4be1-b15b-eb96b4a3b9c5.gif)
+
+
 # Description
 
 The script allows you to generate multiple cables in a circular pattern with random diameters and heights in Blender 3.5.
