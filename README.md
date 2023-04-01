@@ -14,6 +14,7 @@ Python & C++
 # 3D and 2D Object Generation Scripts
 
 This repository contains a collection of scripts for generating 3D and 2D objects in various creative software, such as Blender, Unreal Engine, Adobe Suite, RPG Maker, and more. The scripts are designed to help artists and developers quickly create assets for their projects.
+Most of the script has been generated with the help of GPT-4, great thanks OpenAI for that help !
 
 ## :art: Features
 
