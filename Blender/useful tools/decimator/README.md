@@ -10,6 +10,9 @@ BLENDER 3.5 | Python 10.9
                                                                
 ```
 
+![decimate](https://user-images.githubusercontent.com/92639080/229263124-aaa2dd8b-d538-4afc-a429-bc27d22dabaf.gif)
+
+
 # Description
 
 The script allows you to set a decimate ratio for all your selected objects in Blender 3.5. 
