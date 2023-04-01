@@ -13,6 +13,8 @@ BLENDER 3.5 | Python 10.9
 
 The script allows you to generate multiple cables with random diameters and undulations in Blender 3.5.
 
+![CRAWLING](https://user-images.githubusercontent.com/92639080/229263011-81d7d46a-0cac-470c-8dbf-d32ed6edf00e.gif)
+
 # Features:
 
 - Generates a specified number of cables with random diameters and undulations
