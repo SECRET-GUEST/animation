@@ -9,7 +9,7 @@ BLENDER 3.5 | Python 10.9
                                                          
 ```
 
-## Description
+# Script print video on meshed objects
 
 This code creates a new material in Blender and applies an image texture to it. The material is applied to either a single object, a selection of objects, or a selection of faces in edit mode. The user can specify the material name, path to the video file to be used as a texture, and the emission strength of the material.
 
@@ -27,6 +27,16 @@ This code creates a new material in Blender and applies an image texture to it. 
 - Creates necessary nodes and defines node positions
 - Creates links between nodes to set up the material
 - Selects faces with the material when applied in edit mode
+
+
+## Usage:
+1. Open Blender and create a new scene
+2. Open a text editor window and paste the script into it
+3. Customize the key dimensions, spacing, and padding variables in the script as desired
+4. Customize the keyboard layout and custom key sizes in the script as desired
+5. Run the script
+6. The resulting keyboard model will be created in a new collection named "Keyboard"
+7. Export the model in the desired format for use in other software. 
 
 
 ## Tutorials
