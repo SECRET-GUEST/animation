@@ -9,7 +9,7 @@ BLENDER 3.5 | Python 10.9
                                                          
 ```
 
-# Script print video on meshed objects
+# Script to print video on meshed objects
 
 This code creates a new material in Blender and applies an image texture to it. The material is applied to either a single object, a selection of objects, or a selection of faces in edit mode. The user can specify the material name, path to the video file to be used as a texture, and the emission strength of the material.
 
