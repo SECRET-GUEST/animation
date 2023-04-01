@@ -9,6 +9,9 @@ BLENDER 3.5 | Python 10.9
                                                                   
 ```
 
+![keyboard](https://user-images.githubusercontent.com/92639080/229263056-2c5fcdae-5250-4167-beab-225dd083fc56.gif)
+
+
 # Description
 
 This script generates a 3D model of a keyboard in Blender, with customizable key dimensions, spacing, and padding. The keyboard layout and custom key sizes can be specified in the script, and the resulting model can be exported for use in other software.
