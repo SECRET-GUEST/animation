@@ -10,8 +10,6 @@ BLENDER 3.4 | Python 10.8
                                                           
 ```
 
-# Coming soon
-
 A building and city builder
 
 
