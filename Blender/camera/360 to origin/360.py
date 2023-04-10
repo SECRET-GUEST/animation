@@ -128,12 +128,13 @@ import math
 circle_radius = 142.5       #The radius of the circle
 circle_height = 108         #The height of the circle
 animation_frames = 60       #Numer of frames the animation will have
+focal_length = 15           #Control length of the camera's focal 
+
+
 
 
 #After that you can modify the circle with "s" in blender or its position and the position of the plain axe who is 
 #the center of the view.
-
-
 
 #___  ____ _ _ _ ____ ____    ___  _    ____ _  _ ___
 #|__] |  | | | | |___ |__/    |__] |    |__| |\ |  |
@@ -160,6 +161,8 @@ track_to_constraint = camera.constraints[-1]
 track_to_constraint.target = plain_axes
 track_to_constraint.track_axis = 'TRACK_NEGATIVE_Z'
 track_to_constraint.up_axis = 'UP_Y'
+camera.data.lens = focal_length
+
 
 # Set up the animation
 bpy.context.scene.frame_start = 1
@@ -178,7 +181,7 @@ bpy.ops.object.parent_set(type='FOLLOW')
 # Set up the animation duration
 bpy.context.scene.frame_start = 1
 bpy.context.scene.frame_end = animation_frames
-bpy.ops.anim.keyframe_insert_menu(type='Location', confirm_success=True)
+bpy.ops.anim.keyframe_insert_menu(type='Location') 
 
 # Calculate the angle increment
 angle_increment = 2 * math.pi / animation_frames
@@ -190,5 +193,5 @@ for i in range(1, animation_frames + 1):
     
     camera.location = (x, y, circle_height)
     bpy.context.scene.frame_set(i)
-    bpy.ops.anim.keyframe_insert_menu(type='Location', confirm_success=True)
+    bpy.ops.anim.keyframe_insert_menu(type='Location')
 
