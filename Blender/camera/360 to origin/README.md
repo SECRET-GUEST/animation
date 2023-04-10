@@ -10,6 +10,8 @@ BLENDER 3.5 | Python 3.9
                                                                                                        
 ```
 
+![360](https://user-images.githubusercontent.com/92639080/230977426-05cb4795-3d44-4cae-8923-719597693a39.gif)
+
 # Description
 
 This script creates a circle of specified diameter and height, a camera, and a Plain Axes object at the world origin. The camera is animated to rotate around the circle for a given number of frames, with its view centered on the Plain Axes object. The script provides adjustable parameters for the circle diameter, circle height, and the number of animation frames.
