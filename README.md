@@ -42,17 +42,6 @@ To use the scripts in this repository, follow these general steps:
 Please refer to the README files in each software-specific folder for detailed instructions on how to use the scripts with that particular software.
 
 
-
-BTW, if you are searching for more desk tools to opmtimize your productivity you can also check those pages :
-
-- Generate video in one click from a bunch of footages : https://github.com/SECRET-GUEST/ffmpeg-assembler
-- Clic through picture with this overlay : https://github.com/SECRET-GUEST/Layer-one
-- A powerful autoclicker : https://github.com/SECRET-GUEST/autoclicker
-
-And there are more in tiny script (without graphical user interface but easy to use ) : https://github.com/SECRET-GUEST/tiny-scripts
-
-
-
 ## :scroll: License
 
 This repository is released under the [MIT License](LICENSE). Please see the `LICENSE` file for more information.
@@ -60,4 +49,17 @@ This repository is released under the [MIT License](LICENSE). Please see the `LI
 ## :question: Support & Questions
 
 If you have any questions or need support, please feel free to open an issue or join my twitter.
+
+
+# :gem: Recommendations  
+
+If you're looking for more tools to boost your desktop productivity, these repositories are worth checking out:
+
+- [FFMPEG Assembler](https://github.com/SECRET-GUEST/ffmpeg-assembler) : Generate videos in one click from a multitude of footages.
+- [Layer One](https://github.com/SECRET-GUEST/Layer-one) : Navigate through pictures with this innovative overlay.
+- [AutoClicker](https://github.com/SECRET-GUEST/autoclicker) : A potent autoclicker tool.
+
+Discover more simplified scripts without a GUI that are nonetheless user-friendly: 
+- [Tiny Scripts](https://github.com/SECRET-GUEST/tiny-scripts)
+
 
