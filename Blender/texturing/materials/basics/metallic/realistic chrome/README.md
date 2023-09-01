@@ -8,12 +8,18 @@
  ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝
 ```
 
+![image](https://github.com/SECRET-GUEST/animation/assets/92639080/54dac6b6-6bbd-47cb-bc48-a5fc4effb10a)
+
+
 # Script for Ultra-Realistic Chrome Material in Blender
 
 This code creates a new ultra-realistic chrome material in Blender using only the built-in shaders. The material can be applied to a single object, a selection of objects, or a selection of faces in edit mode.
 
 Here you got a visual explanation on how to make it manually on [toericht youtube channel](https://www.youtube.com/watch?v=co1uZvyVvjE&ab_channel=toericht)
+(like and subscribe for his good tutorial !)
 
+
+![image](https://github.com/SECRET-GUEST/animation/assets/92639080/9270ef72-bd0b-47a6-b699-1ce85983343b)
 
 ## Features
 
