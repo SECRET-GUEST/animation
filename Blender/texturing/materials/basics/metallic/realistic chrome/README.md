@@ -12,7 +12,7 @@
 
 This code creates a new ultra-realistic chrome material in Blender using only the built-in shaders. The material can be applied to a single object, a selection of objects, or a selection of faces in edit mode.
 
-Here you got a visual explanation on how to make it manually on [Toericht youtube channel](https://www.youtube.com/watch?v=co1uZvyVvjE&ab_channel=toericht)
+Here you got a visual explanation on how to make it manually on [toericht youtube channel](https://www.youtube.com/watch?v=co1uZvyVvjE&ab_channel=toericht)
 
 
 ## Features
