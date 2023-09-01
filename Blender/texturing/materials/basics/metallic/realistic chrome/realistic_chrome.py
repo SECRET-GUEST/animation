@@ -114,6 +114,7 @@
 
 #You don't have to import with pip, just paste the code in blender     
 
+import bpy
 
 #___  ____ _ _ _ ____ ____    ___  _    ____ _  _ ___
 #|__] |  | | | | |___ |__/    |__] |    |__| |\ |  |
@@ -121,8 +122,6 @@
                 
 
 #OPENING | https://www.youtube.com/watch?v=_85LaeTCtV8 :3
-
-import bpy
 
 def apply_custom_chrome_material(obj):
     # 1. Create a new material named "chrome". If it already exists, append a number to its name.
