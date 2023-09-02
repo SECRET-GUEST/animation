@@ -10,7 +10,7 @@
 ```
 
 
-# World Shader Setup for Blender
+# World background Shader Setup for Blender
 
 This script sets up a custom world shader in Blender, creating a node setup that uses an environment texture to influence the background color based on camera rays. This allows for realistic lighting and reflections from the environment texture while maintaining a custom background color.
 
