@@ -14,8 +14,7 @@
 
 This script sets up a custom world shader in Blender, creating a node setup that uses an environment texture to influence the background color based on camera rays. This allows for realistic lighting and reflections from the environment texture while maintaining a custom background color.
 
-Here you got a visual explanation on how to make it manually on [toericht youtube channel](https://www.youtube.com/watch?v=Z9Dtdvp88Q8&ab_channel=toericht)
-I used his tutorial to make the scripts, so don't forget to like and subscribe ^^ !
+If you're in pursuit of iridescence or whatever chromatic metal, go watch my other page here : [realistic chrome material](https://github.com/SECRET-GUEST/animation/tree/main/Blender/texturing/materials/basics/metallic/realistic%20chrome)
 
 
 ![image](https://github.com/SECRET-GUEST/animation/assets/92639080/d034d9be-850f-4d42-bc8a-cebad7bbd214)
