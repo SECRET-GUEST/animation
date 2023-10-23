@@ -10,12 +10,6 @@
 
 This repository branch hosts a variety of scripts created to enhance your experience with Blender. Whether you are looking to automate certain tasks, or introduce new functionalities into your workflow, these scripts are designed with versatility and ease-of-use in mind.
 
-## :art: Script Categories
-
-- :gear: **Automation Scripts:** Speed up your workflow by automating repetitive tasks.
-- :bulb: **Creative Scripts:** Unleash your creativity with scripts that introduce new functionalities.
-- :chart_with_upwards_trend: **Analysis Scripts:** Get insights into your projects with analytical scripts.
-
 ## :wrench: Installation & Usage
 
 1. Clone the repository or download the specific script you need.
