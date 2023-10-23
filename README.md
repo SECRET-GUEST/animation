@@ -26,6 +26,7 @@ Most of the script was made with the help of GPT-4, great thanks OpenAI for that
 
 - `blender` - Scripts for generating objects in Blender
 - `Unreal` - Scripts for generating objects in Unreal Engine
+- `Gimp` - Scripts for tools in Gimp 3.0
 - `2D` - Scripts for generating objects in 2D software like Photoshop
 - `Gaming` - Scripts for generating objects in RPG Maker, tiles, ....
 - `Others` - Scripts for generating objects in other creative software
