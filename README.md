@@ -20,12 +20,9 @@ Most of the script was made with the help of GPT-4, great thanks OpenAI for that
 
 ## :file_folder: Branches Structure
 
-- `blender` - Scripts for generating objects in Blender
-- `Unreal` - Scripts for generating objects in Unreal Engine
-- `Gimp` - Scripts for tools in Gimp 3.0
-- `2D` - Scripts for generating objects in 2D software like Photoshop
-- `Gaming` - Scripts for generating objects in RPG Maker, tiles, ....
-- `Others` - Scripts for generating objects in other creative software
+- `blender` - [Scripts for generating objects or else in Blender](https://github.com/SECRET-GUEST/animation/tree/blender)
+- `Unreal` - [Scripts for Unreal Engine](https://github.com/SECRET-GUEST/animation/tree/unreal)
+- `Gimp` - [Scripts for tools in Gimp 3.0](https://github.com/SECRET-GUEST/animation/tree/gimp)
 
 ## :arrow_down: Installation & Usage
 
