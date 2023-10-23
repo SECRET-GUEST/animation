@@ -22,7 +22,7 @@ Most of the script was made with the help of GPT-4, great thanks OpenAI for that
 - :wrench: Scripts tailored for various creative software, including Blender, Unreal Engine, Adobe Suite, RPG Maker, and others
 - :zap: Easily customizable and adaptable to suit your specific project needs
 
-## :file_folder: Branch Structure
+## :file_folder: Branches Structure
 
 - `blender` - Scripts for generating objects in Blender
 - `Unreal` - Scripts for generating objects in Unreal Engine
