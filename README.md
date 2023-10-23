@@ -1,56 +1,33 @@
 ```
- █████╗ ███╗   ██╗██╗███╗   ███╗ █████╗ ████████╗██╗ ██████╗ ███╗   ██╗
-██╔══██╗████╗  ██║██║████╗ ████║██╔══██╗╚══██╔══╝██║██╔═══██╗████╗  ██║
-███████║██╔██╗ ██║██║██╔████╔██║███████║   ██║   ██║██║   ██║██╔██╗ ██║
-██╔══██║██║╚██╗██║██║██║╚██╔╝██║██╔══██║   ██║   ██║██║   ██║██║╚██╗██║
-██║  ██║██║ ╚████║██║██║ ╚═╝ ██║██║  ██║   ██║   ██║╚██████╔╝██║ ╚████║
-╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝╚═╝     ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═╝ ╚═════╝ ╚═╝  ╚═══╝
+ ██████╗ ██╗███╗   ███╗██████╗ 
+██╔════╝ ██║████╗ ████║██╔══██╗
+██║  ███╗██║██╔████╔██║██████╔╝
+██║   ██║██║██║╚██╔╝██║██╔═══╝ 
+╚██████╔╝██║██║ ╚═╝ ██║██║     
+ ╚═════╝ ╚═╝╚═╝     ╚═╝╚═╝     
 ```
+# THIS BRANCH IS WAITING FOR GIMP 3.0 (probably for christmas)
 
-# 3D and 2D Object Generation Scripts
 
-This repository contains a collection of scripts for generating 3D and 2D objects in various creative software, such as Blender, Unreal Engine, Adobe Suite, RPG Maker, and more. The scripts are designed to help artists and developers quickly create assets for their projects.
-Most of the script was made with the help of GPT-4, great thanks OpenAI for that help !
+# GIMP Scripts Collection
 
-## :art: Features
+This repository branch hosts a variety of scripts created to enhance your experience with GIMP. Whether you are looking to automate certain tasks, or introduce new functionalities into your workflow, these scripts are designed with versatility and ease-of-use in mind.
 
-- :star2: A wide range of scripts for generating 3D and 2D objects, including characters, props, environments, and more
-- :wrench: Scripts tailored for various creative software, including Blender, Unreal Engine, Adobe Suite, RPG Maker, and others
-- :zap: Easily customizable and adaptable to suit your specific project needs
-
-## :file_folder: Branches Structure
-
-- `blender` - Scripts for generating objects in Blender
-- `Unreal` - Scripts for generating objects in Unreal Engine
-- `Gimp` - Scripts for tools in Gimp 3.0
-- `2D` - Scripts for generating objects in 2D software like Photoshop
-- `Gaming` - Scripts for generating objects in RPG Maker, tiles, ....
-- `Others` - Scripts for generating objects in other creative software
-
-## :arrow_down: Installation & Usage
-
-To use the scripts in this repository, follow these general steps:
+## :wrench: Installation & Usage
 
 1. Clone the repository or download the specific script you need.
-2. Open your creative software (e.g., Blender, Unreal Engine, Adobe Suite, RPG Maker).
-3. Import or execute the script according to the software's guidelines.
-4. Customize the script's parameters to achieve the desired result.
+2. Open GIMP.
+3. Navigate to `Edit` > `Preferences` > `Folders` > `Scripts`.
+4. Drag and drop the script file into the scripts folder or copy it manually.
+5. Refresh the script list by going to `Filters` > `Script-Fu` > `Refresh Scripts`.
+6. Once refreshed, the script can be accessed and configured within GIMP.
 
-Please refer to the README files in each software-specific folder for detailed instructions on how to use the scripts with that particular software.
+## :gem: Recommendations  
 
+- Discover more simplified scripts without a GUI that are nonetheless user-friendly: [Tiny Scripts](https://github.com/SECRET-GUEST/tiny-scripts)
+
+- Explore scripts for other creative software in the various branches of this repository: [Main Branch](https://github.com/SECRET-GUEST/animation/tree/main)
 
 ## :scroll: License
 
 This repository is released under the [MIT License](LICENSE). Please see the `LICENSE` file for more information.
-
-## :question: Support & Questions
-
-If you have any questions or need support, please feel free to open an issue or join my twitter.
-
-
-# :gem: Recommendations  
-
-Discover more simplified scripts without a GUI that are nonetheless user-friendly: 
-- [Tiny Scripts](https://github.com/SECRET-GUEST/tiny-scripts)
-
-
