@@ -16,6 +16,7 @@ This script sets up a custom world shader in Blender, creating a node setup that
 
 If you're in pursuit of iridescence or whatever chromatic metal, go watch my other page here : [realistic chrome material](https://github.com/SECRET-GUEST/animation/tree/main/Blender/texturing/materials/basics/metallic/realistic%20chrome)
 
+### [Here is an example of this material being utilized to create an iridescent castle along with some downloadable assets](https://www.artstation.com/artwork/JvJmyA)
 
 ![image](https://github.com/SECRET-GUEST/animation/assets/92639080/d034d9be-850f-4d42-bc8a-cebad7bbd214)
 
