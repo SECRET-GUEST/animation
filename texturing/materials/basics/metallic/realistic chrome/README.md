@@ -29,10 +29,7 @@ I used his tutorial to make the scripts, so don't forget to like and subscribe ^
 - Configures and links nodes to achieve the desired chrome effect.
 - Adapts to existing materials by appending a number to the material name if it already exists.
 
-[You can find here an example of this material used to make an iridescent castle, with some assets to download ](https://www.artstation.com/artwork/JvJmyA)
-
-![image](https://github.com/SECRET-GUEST/animation/assets/92639080/d75d5c9b-cc12-4fd4-97d0-cf031ea07307)
-
+## [You can find here an example of this material used to make an iridescent castle, with some assets to download ](https://www.artstation.com/artwork/JvJmyA)
 
 ## Usage:
 
