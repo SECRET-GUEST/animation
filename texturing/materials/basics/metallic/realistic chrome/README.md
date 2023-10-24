@@ -30,7 +30,7 @@ I used his tutorial to make the scripts, so don't forget to like and subscribe ^
 - Adapts to existing materials by appending a number to the material name if it already exists.
 
 
-## [You can find here an example of this material used to make an iridescent castle, with some assets to download ](https://www.artstation.com/artwork/JvJmyA)
+### [Here is an example of this material being utilized to create an iridescent castle along with some downloadable assets](https://www.artstation.com/artwork/JvJmyA)
 
 ## Usage
 
