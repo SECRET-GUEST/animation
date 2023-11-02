@@ -1,4 +1,4 @@
-R![Blender](https://img.shields.io/badge/Blender-orange)
+![Blender](https://img.shields.io/badge/Blender-orange)
 ![Python 3.10.13](https://img.shields.io/badge/Python-3.10.13-blue)
 ```
  ██████╗ █████╗ ███╗   ███╗██╗    ██╗      ██████╗  ██████╗  ██████╗ 
