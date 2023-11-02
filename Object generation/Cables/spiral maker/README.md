@@ -9,10 +9,7 @@
 ╚══════╝╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝    ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
 ```
 
-# う
-# ず
-# ま
-# き
+# うずまき
 
 This script generates intertwined spirals in Blender which can be optionally converted into pipe structures.
 
