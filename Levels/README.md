@@ -1,3 +1,3 @@
-# Coming soon
+# DEADZONE
 
-The projects here are not yet complete. I will publish updates when I find the time to develop them further, but currently, I am focused on more important projects. Stay tuned for future updates.
+Since Unreal 5.2 has been released, making those scripts is kinda pointless, I will probably finish it one day but not for now sorry
