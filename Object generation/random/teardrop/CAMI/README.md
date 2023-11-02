@@ -11,7 +11,8 @@
 # Blender Teardrop Script
 
 This script is used to generate a collection of three teardrops in Blender, which are rotated around an empty object and are constrained to face the empty at all times. The script also provides the option to convert the teardrops to meshes and delete the empty object at the end.
-[cami_logo.webm](https://github.com/SECRET-GUEST/animation/assets/92639080/5ab92f99-83b4-4c8a-97e8-2261c044d868)
+
+[cami_logo.webm](https://github.com/SECRET-GUEST/animation/assets/92639080/3c8f3daa-60ff-45a8-921f-f212f9da9553)
 
 ## Usage
 
