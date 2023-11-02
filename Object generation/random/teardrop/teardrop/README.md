@@ -11,6 +11,7 @@
 # Blender Simple Teardrop Script
 
 This script generates a single teardrop object in Blender using Bezier curves and a solidify modifier. 
+![Capture d’écran du 2023-11-02 17-12-23](https://github.com/SECRET-GUEST/animation/assets/92639080/67e77cbb-458a-438d-9ab8-9ac36cad5ee0)
 
 ## Usage
 1. Open Blender.
