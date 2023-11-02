@@ -9,9 +9,11 @@
 ╚══════╝╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝    ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
 ```
 
-# Blender Spiral Generator Script
+# うずまき
 
 This script generates intertwined spirals in Blender which can be optionally converted into pipe structures.
+
+[uzumaki.webm](https://github.com/SECRET-GUEST/animation/assets/92639080/5b7e8262-0c9b-4de6-897d-30c6d23601b0)
 
 ## Features
 
