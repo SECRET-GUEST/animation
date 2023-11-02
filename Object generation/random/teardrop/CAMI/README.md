@@ -28,3 +28,5 @@ This script is used to generate a collection of three teardrops in Blender, whic
 - Constrains the teardrops to always face the empty.
 - Provides an option to convert the teardrops to meshes.
 - Provides an option to delete the empty object.
+
+For a script that generates single teardrop,[ visit this place ](https://github.com/SECRET-GUEST/animation/blob/blender/Object%20generation/random/teardrop/teardrop)https://github.com/SECRET-GUEST/animation/blob/blender/Object%20generation/random/teardrop/teardrop
