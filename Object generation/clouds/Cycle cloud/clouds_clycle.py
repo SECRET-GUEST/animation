@@ -80,12 +80,12 @@ strength = 2.0  # Strength parameter for Volume Displace modifier
 texture_type = 'SOFT'  # Texture type: 'HARD' or 'SOFT'
 cloud_texture_size = 2  # Texture size
 
-# World environement:
+# World background:
 use_world_sky = True  # Only set an image for the world background
-use_world_reflexion = True # Set background + a reflective image 
 background_color_hex = "#0060D4"  # Default is blue
-# Link to the environment image to have a reflexion
+# Link to the environment image to have a reflexion, if none, only background will be generated not the node :
 skylink = ""
+
 
 
 # Lights:
@@ -178,7 +178,6 @@ if spotlight_cloud:
     bpy.context.collection.objects.unlink(spotlight)
 
 
-
 # Convert hex to RGB for the world
 background_color_rgb = tuple(int(background_color_hex.lstrip('#')[i:i+2], 16) / 255.0 for i in (0, 2, 4))
 
@@ -203,46 +202,44 @@ if use_world_sky:
     mapping.location = (200, 0)
     bpy.context.scene.world.node_tree.links.new(tex_coord.outputs["Generated"], mapping.inputs["Vector"])
 
-    # 2. Create an Environment Texture node
-    env_texture = nodes.new(type="ShaderNodeTexEnvironment")
-    env_texture.image = bpy.data.images.load(filepath=skylink)
-    env_texture.location = (400, 0)
-    bpy.context.scene.world.node_tree.links.new(mapping.outputs["Vector"], env_texture.inputs["Vector"])
+    if skylink is None or skylink == "":
+        # skylink is None, use single background setup
+        background = nodes.new(type="ShaderNodeBackground")
+        background.location = (600, 0)
+        background.inputs[0].default_value = (*background_color_rgb, 1)  # Set the color from the hex value
+        
+        world_output = nodes.new(type="ShaderNodeOutputWorld")
+        world_output.location = (800, 0)
+        bpy.context.scene.world.node_tree.links.new(background.outputs["Background"], world_output.inputs["Surface"])
+        
+    else:  
+        # skylink is provided, use reflection setup
+        env_texture = nodes.new(type="ShaderNodeTexEnvironment")
+        env_texture.image = bpy.data.images.load(filepath=skylink)
+        env_texture.location = (400, 0)
+        bpy.context.scene.world.node_tree.links.new(mapping.outputs["Vector"], env_texture.inputs["Vector"])
 
-    if use_world_reflexion:
-        # 3. Create two Background nodes and a Light Path node
         background1 = nodes.new(type="ShaderNodeBackground")
         background1.location = (600, 100)
-
+        
         background2 = nodes.new(type="ShaderNodeBackground")
         background2.location = (600, -100)
         background2.inputs[0].default_value = (*background_color_rgb, 1)
-
+        
         light_path = nodes.new(type="ShaderNodeLightPath")
         light_path.location = (600, -300)
-
-        # Connect the Environment Texture's color output to the first Background node's color input
+        
         bpy.context.scene.world.node_tree.links.new(env_texture.outputs["Color"], background1.inputs["Color"])
-
-        # 4. Create a Mix Shader node
+        
         mix_shader = nodes.new(type="ShaderNodeMixShader")
         mix_shader.location = (800, 0)
         bpy.context.scene.world.node_tree.links.new(light_path.outputs["Is Camera Ray"], mix_shader.inputs["Fac"])
         bpy.context.scene.world.node_tree.links.new(background1.outputs["Background"], mix_shader.inputs[1])
         bpy.context.scene.world.node_tree.links.new(background2.outputs["Background"], mix_shader.inputs[2])
-
-        # 5. Create a World Output node
+        
         world_output = nodes.new(type="ShaderNodeOutputWorld")
         world_output.location = (1000, 0)
         bpy.context.scene.world.node_tree.links.new(mix_shader.outputs["Shader"], world_output.inputs["Surface"])
         
-    else:
-        # Single background setup (no reflection)
-        background = nodes.new(type="ShaderNodeBackground")
-        background.location = (600, 0)
-        bpy.context.scene.world.node_tree.links.new(env_texture.outputs["Color"], background.inputs["Color"])
-        
-        # Create a World Output node
-        world_output = nodes.new(type="ShaderNodeOutputWorld")
-        world_output.location = (800, 0)
+
         bpy.context.scene.world.node_tree.links.new(background.outputs["Background"], world_output.inputs["Surface"])
