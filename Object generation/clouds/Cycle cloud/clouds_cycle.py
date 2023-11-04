@@ -80,12 +80,11 @@ strength = 2.0  # Strength parameter for Volume Displace modifier
 texture_type = 'SOFT'  # Texture type: 'HARD' or 'SOFT'
 cloud_texture_size = 2  # Texture size
 
-# World background:
-use_world_sky = True  # Only set an image for the world background
+# World environement:
+use_world_sky = True  # Set the background
 background_color_hex = "#0060D4"  # Default is blue
-# Link to the environment image to have a reflexion, if none, only background will be generated not the node :
+# Link to the environment image to have a reflexion, if none or "", only background will be generated not the node :
 skylink = ""
-
 
 
 # Lights:
