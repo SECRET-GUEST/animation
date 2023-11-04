@@ -24,7 +24,7 @@
 #                                generate clouds based on random shapes that             |                                           |               |                                           |               |                                           |                    |                                           |
                 
 #                           /                      |    v    |                    \
-#                 you can adjust in the parameters. Art station : 
+#               you can adjust in the parameters. https://www.artstation.com/artwork/qew98N
 #                                   |                                |                                          |      |                                |                                          |      |                                |                                          |           |                                |
 #                                                                                                    |                                                                 |                      |                     |                       |                      |                     |                       |                      |                     |                            |
 #           
