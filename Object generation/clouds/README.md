@@ -12,6 +12,8 @@
 
 `Clouds` is a Python script for Blender that automates the generation of realistic clouds and sets up your scene with various lighting and environmental options. With adjustable parameters, this script allows for a customizable cloud generation experience.
 
+[Capture vidéo du 04-11-2023 17:46:07.webm](https://github.com/SECRET-GUEST/animation/assets/92639080/69b87b4f-ca8d-4d20-9b35-c94506f3fedc)
+
 ## Features:
 
 1. **Metaball-based Cloud Generation**:
@@ -36,6 +38,11 @@
 
 6. **Material Assignment**:
    - Assigns a transparency material to the cloud mesh.
+
+Btw you can find some sky image I've generated for this script on [art station here](https://www.artstation.com/artwork/qew98N)
+
+
+![Capture d’écran du 2023-11-04 17-18-04](https://github.com/SECRET-GUEST/animation/assets/92639080/8cb2f485-8385-4ce8-8e11-723f1d9f227e)
 
 ## Usage:
 
@@ -83,3 +90,5 @@ lumens = 20000  # Power of the spotlight
 ```
 
 Experiment with different parameter values to achieve the desired cloud and scene setup.
+
+![Capture d’écran du 2023-11-04 19-23-39](https://github.com/SECRET-GUEST/animation/assets/92639080/07a4bb6d-52eb-472d-8d8f-b433184684e6)
