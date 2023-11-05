@@ -8,3 +8,7 @@
 ╚██████╗███████╗╚██████╔╝╚██████╔╝██████╔╝███████║
  ╚═════╝╚══════╝ ╚═════╝  ╚═════╝ ╚═════╝ ╚══════╝
 ```
+# Cloud Generation Scripts Repository
+
+This repository contains a collection of scripts tailored for automated cloud generation within Blender. Through these scripts, users can effortlessly create realistic or stylized cloud formations, which can be further used in animations, renderings, or even real-time applications.
+
