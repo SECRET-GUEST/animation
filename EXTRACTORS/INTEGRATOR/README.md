@@ -29,7 +29,3 @@ This repository contains a script `inegrator.py` that allows you to either execu
 7. Press the "Run Script" button to run the `inegrator.py` script.
 
 The scripts in the specified directory will now either be executed or imported into Blender's Text Editor based on your setting.
-
----
-
-This README explains the updated functionality of choosing between executing the scripts or just importing them into Blender's Text Editor. It provides a step-by-step guide on how to use the `inegrator.py` script in Blender, and how to modify the parameters to fit the user's needs.
