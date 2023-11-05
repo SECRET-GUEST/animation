@@ -25,6 +25,8 @@
                 
 #                           /                      |    v    |                    \
 #                     into python scripts that can be used with blender API for AI or else.
+
+#              Script's origin : https://github.com/SECRET-GUEST/animation/tree/blender/EXTRACTORS
 #                                   |                                |                                          |      |                                |                                          |      |                                |                                          |           |                                |
 #                                                                                                    |                                                                 |                      |                     |                       |                      |                     |                       |                      |                     |                            |
 #           
