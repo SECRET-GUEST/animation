@@ -13,6 +13,7 @@
 # Blender Material Extractor
 
 This script allows exporting materials from Blender to individual Python scripts which can be re-imported into Blender.
+
 [Capture vidéo du 05-11-2023 04:02:59.webm](https://github.com/SECRET-GUEST/animation/assets/92639080/90188046-09d0-4f1a-b8a3-3c7728de2daf)
 
 ## Usage
