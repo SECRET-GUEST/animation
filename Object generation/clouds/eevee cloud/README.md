@@ -10,7 +10,7 @@
 ```
 # Procedural Cloud Generation Script for Blender
 
-This script for Blender facilitates the procedural generation of clouds within a 3D scene. Clouds are created using a cube as a container, and a procedural material is applied to generate the cloud appearance. Additionally, the script also allows for the configuration of a sky environment with or without reflection, depending on whether an environment image is provided.
+This script for Blender facilitates the procedural generation of clouds within a 3D scene. Clouds are created using a cube as a container, and a procedural **material** is applied to generate the cloud appearance. Additionally, the script also allows for the configuration of a sky environment with or without reflection, depending on whether an environment image is provided.
 [Capture vidéo du 05-11-2023 00:54:35.webm](https://github.com/SECRET-GUEST/animation/assets/92639080/b2bee779-29cb-41f5-b23f-dd46d9f2e69e)
 
 ## Features
