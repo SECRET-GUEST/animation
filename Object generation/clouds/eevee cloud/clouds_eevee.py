@@ -87,7 +87,7 @@ skylink = ""
 #|__] |  | | | | |___ |__/    |__] |    |__| |\ |  |
 #|    |__| |_|_| |___ |  \    |    |___ |  | | \|  |
                 
-# Vérifier ou créer la collection 'clouds'
+# Ensure collection "clouds" exists
 cloud_collection = bpy.data.collections.get("clouds")
 if cloud_collection is None:
     cloud_collection = bpy.data.collections.new("clouds")
