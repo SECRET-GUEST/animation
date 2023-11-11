@@ -41,15 +41,25 @@ This Blender script automates the creation of text objects based on a list of wo
    - Press `Run Script` to execute the script.
 
 3. **Customize Parameters**:
-   - `words`: A tuple of words to create as text objects (e.g., `("Hello", "World", "Blender")`).
+   - `words`: A tuple of words to create as text objects. For a single word, use a trailing comma (e.g., `("Word",)`). For multiple words, separate them with commas (e.g., `("Hello", "World", "Blender")`).
    - `font_size`: The desired size of the text.
    - `font_path`: The path to your custom font file (optional). Leave as `None` for the default font.
 
-##### Note : To use a custom font, provide the path to the font file in `font_path`. For example:
+## IMPORTANT Notes
+
+- When adding a single word, ensure to use a trailing comma to prevent the script from iterating over each letter (e.g., `("Word",)` instead of `("Word")`).
+
+- To use a custom font, provide the path to the font file in `font_path`. For example:
 
 ```python
 font_path = "/path/to/your/font.ttf"
 ```
+
+- On Linux systems, you can use the `grep` command to find details about installed fonts, including the font path and family. Example command in the terminal:
+   ```
+   fc-list | grep "Arial"
+   ```
+  This can be useful for setting the `font_path` in the script.
 
 ## Example
 
@@ -60,4 +70,21 @@ words = ("Apple", "Banana", "Cherry")
 font_size = 1.0
 font_path = None  # Use default font
 ```
+
+To generate a single word : 
+
+```python
+words = ("Apple",)
+font_size = 1.0
+font_path = None  # Use default font
+```
+To generate multiple letters Objects B a n a n a : 
+
+```python
+words = ("Banana")
+font_size = 1.0
+font_path = None  # Use default font
+```
+
+
 
