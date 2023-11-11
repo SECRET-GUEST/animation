@@ -113,8 +113,14 @@ def create_text_objects(word_list, font_size, font_path=None):
             except:
                 print("Error loading font. Using default font.")
 
+        # Move the text object to the 'texts' collection
+        # Remove from all other collections
+        for collection in text_obj.users_collection:
+            collection.objects.unlink(text_obj)
+        
         # Link the text object to the 'texts' collection
         new_collection.objects.link(text_obj)
+
 
 
 create_text_objects(words, font_size, font_path)
