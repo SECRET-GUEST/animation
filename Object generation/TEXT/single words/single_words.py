@@ -24,7 +24,7 @@
 #                           generate one or multiples words using or not some fonts        |                                           |               |                                           |               |                                           |                    |                                           |
                 
 #                           /                      |    v    |                    \
-#                 | Same kind of script can be found here ; 
+#                https://github.com/SECRET-GUEST/animation/tree/blender/Object%20generation/TEXT
 #                                   |                                |                                          |      |                                |                                          |      |                                |                                          |           |                                |
 #                                                                                                    |                                                                 |                      |                     |                       |                      |                     |                       |                      |                     |                            |
 #           
@@ -61,8 +61,6 @@
 #| |\ | [__   |  |__| |    |    |__|  |  | |  | |\ |
 #| | \| ___]  |  |  | |___ |___ |  |  |  | |__| | \|
 import bpy
-import math
-
 
 #____ ____ ___ ___ _ _  _ ____ ____ 
 #[__  |___  |   |  | |\ | | __ [__  
@@ -84,23 +82,35 @@ font_path = None # Set fonts or use default
           
 
 def create_text_objects(word_list, font_size, font_path=None):
+    # Check if the 'texts' collection exists, if not, create it
+    if "texts" not in bpy.data.collections:
+        new_collection = bpy.data.collections.new("texts")
+        bpy.context.scene.collection.children.link(new_collection)
+    else:
+        new_collection = bpy.data.collections["texts"]
+
     for i, word in enumerate(word_list):
-        # Add a new text object to the scene at a specific location
-        bpy.ops.object.text_add(location=(i * 2, 0, 0))
+        # Create a new text object for each word
+        bpy.ops.object.text_add(location=(i * 2, 0, 0))  # Adjust location if needed
         text_obj = bpy.context.object
         text_obj.data.body = word
 
-        # Set the font size
+        # Rename the object to match the word
+        text_obj.name = word
+
+        # Set font size
         text_obj.data.size = font_size
 
-        # Set the font if a path is provided, else use default font
+        # Set custom font if a font path is provided
         if font_path:
             try:
-                # Load and set the font
                 font = bpy.data.fonts.load(font_path)
                 text_obj.data.font = font
             except:
                 print("Error loading font. Using default font.")
+
+        # Link the text object to the 'texts' collection
+        new_collection.objects.link(text_obj)
 
 
 create_text_objects(words, font_size, font_path)
