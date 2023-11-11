@@ -1,4 +1,5 @@
-BLENDER 3.5 | Python 10.9
+[![Blender](https://img.shields.io/badge/Blender-3.6-orange.svg)](https://www.blender.org/download/releases/3-6/)
+[![Python](https://img.shields.io/badge/Python-3.10.13-blue.svg)](https://www.python.org/downloads/release/python-31013/)
 ```
  ██████╗ ██████╗  ██████╗ ██╗   ██╗███╗   ██╗██████╗     ██████╗  █████╗ ██████╗ ███████╗██████╗ ███████╗
 ██╔════╝ ██╔══██╗██╔═══██╗██║   ██║████╗  ██║██╔══██╗    ██╔══██╗██╔══██╗██╔══██╗██╔════╝██╔══██╗██╔════╝
@@ -12,6 +13,9 @@ BLENDER 3.5 | Python 10.9
 # Description
 
 This script generates a specified number of papers with folds and places them randomly within a circular area.
+
+![papers](https://user-images.githubusercontent.com/92639080/229263039-66a230c0-e095-401f-93fc-9e7e14fad93b.gif)
+
 
 # Features:
 - Ability to generate a specified number of papers
