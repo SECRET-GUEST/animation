@@ -76,7 +76,8 @@ font_size = 1.0
 words = ("word1", "word2", "word3")  
 
 # Example font path: '/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'
-font_path = None # Set fonts or use default
+font_path = None # Set fonts or use default with None
+# Grep font path on linux with "fc-list | grep "FontName"
 
 
 #___  ____ _ _ _ ____ ____    ___  _    ____ _  _ ___
