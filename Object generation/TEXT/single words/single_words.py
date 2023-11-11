@@ -68,9 +68,12 @@ import bpy
                                    
 #OPENING | https://www.youtube.com/watch?v=qmk3Rri0jsQ&ab_channel=SECRETGUEST
 
-# Example usage
-words = ("word1", "word2", "word3")  # Add your word(s) here
+
 font_size = 1.0
+
+# To add only one word use a , ex: ("Word",) 
+# if you don't it will generate letters by objects : W o r d
+words = ("word1", "word2", "word3")  
 
 # Example font path: '/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'
 font_path = None # Set fonts or use default
