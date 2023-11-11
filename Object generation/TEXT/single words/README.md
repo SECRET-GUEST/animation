@@ -12,6 +12,8 @@
 
 This Blender script automates the creation of text objects based on a list of words, allowing for customization of font size and font type. Each generated text object is named after the corresponding word and organized into a collection named "texts".
 
+[Capture vidéo du 11-11-2023 14:21:01.webm](https://github.com/SECRET-GUEST/animation/assets/92639080/9ec2b7b5-00b7-4a79-9a61-6eead8f39b9f)
+
 ## Features
 
 - **Automated Text Object Creation**: Generates text objects for each word in a provided list.
