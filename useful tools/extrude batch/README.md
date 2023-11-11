@@ -8,13 +8,15 @@
 ███████╗██╔╝ ██╗   ██║   ██║  ██║╚██████╔╝██████╔╝███████╗    ██║  ██║███████╗███████╗
 ╚══════╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚══════╝    ╚═╝  ╚═╝╚══════╝╚══════╝
 ```
-Bien sûr, voici un exemple de README pour GitHub pour votre script d'extrusion dans Blender :
-
----
 
 # Extrude all selected item in the right axe
 
 This script for Blender automates the process of extruding selected mesh objects along specified axes (X, Y, and Z). It provides an easy way to apply uniform extrusion to multiple objects in a scene.
+
+NOTE: After running the script, click on an empty space in Blender to refresh the interface.
+
+[Capture vidéo du 11-11-2023 23:15:58.webm](https://github.com/SECRET-GUEST/animation/assets/92639080/8a71a424-4c05-4574-8075-038db7be520a)
+
 
 ## Features
 
