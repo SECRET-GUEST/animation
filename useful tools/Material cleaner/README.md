@@ -9,7 +9,7 @@
  ╚══╝╚══╝ ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝    ╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝╚══════╝
 ```
 
-# Blender Project Cleanup Script
+#  Project Cleanup 
 
 This Blender script provides a comprehensive cleanup of a Blender project. It's designed to clear simulation caches, delete all keyframes, and remove unused materials, textures, meshes, images, collections, UV maps, and node groups.
 
