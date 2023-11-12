@@ -118,7 +118,8 @@ def clear_simulation_caches():
 
     # Clear Rigid Body World Cache
     if bpy.context.scene.rigidbody_world:
-        bpy.context.scene.rigidbody_world.point_cache.frame_start = bpy.context.scene.frame_start
+        bpy.ops.ptcache.free_bake_all()
+
 
 def clear_all_keyframes():
     # Clear keyframes from all objects
