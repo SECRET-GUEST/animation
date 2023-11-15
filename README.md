@@ -26,6 +26,9 @@ This repository branch hosts a variety of scripts created to enhance your experi
 
 - Explore scripts for other creative software in the various branches of this repository: [Main Branch](https://github.com/SECRET-GUEST/animation/tree/main)
 
+- Instead of use the integrator scripts (in extractor folder) you can also use my other script to sort all python files from this branch (in example) [with this tool ](https://github.com/SECRET-GUEST/file_organizer)
+  It will require to compile it by yourself, but if you don't need the GUI to do it [you can use this script version of the tool](https://github.com/SECRET-GUEST/tiny-scripts/tree/ALL/C/Files%20handlers/File%20organizer)
+
 ## :scroll: License
 
 This repository is released under the [MIT License](LICENSE). Please see the `LICENSE` file for more information.
