@@ -12,6 +12,8 @@
 
 This repository branch hosts a variety of scripts created to enhance your experience with Blender. Whether you are looking to automate certain tasks, or introduce new functionalities into your workflow, these scripts are designed with versatility and ease-of-use in mind.
 
+### [Additionnaly, I made a GPT to help you make scripts here](https://chat.openai.com/g/g-q2GEXaTWl-3d-with-blender)
+
 ## :wrench: Installation & Usage
 
 1. Clone the repository or download the specific script you need.
