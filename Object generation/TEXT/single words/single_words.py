@@ -71,6 +71,8 @@ import bpy
 
 font_size = 1.0
 
+in_collection = "Texts" # Change it to generate in a new or previous collection
+
 # To add only one word use a , ex: ("Word",) 
 # if you don't it will generate letters by objects : W o r d
 words = ("word1", "word2", "word3")  
@@ -88,10 +90,10 @@ font_path = None # Set fonts or use default with None
 def create_text_objects(word_list, font_size, font_path=None):
     # Check if the 'texts' collection exists, if not, create it
     if "texts" not in bpy.data.collections:
-        new_collection = bpy.data.collections.new("texts")
+        new_collection = bpy.data.collections.new(in_collection)
         bpy.context.scene.collection.children.link(new_collection)
     else:
-        new_collection = bpy.data.collections["texts"]
+        new_collection = bpy.data.collections[in_collection]
 
     for i, word in enumerate(word_list):
         # Create a new text object for each word
