@@ -1,4 +1,4 @@
-![Blender](https://img.shields.io/badge/Blender-orange)
+[![Blender](https://img.shields.io/badge/Blender-4.0-orange.svg)](https://www.blender.org/download/releases/4.0/)
 ![Python 3.10.13](https://img.shields.io/badge/Python-3.10.13-blue)
 ```
 ██╗    ██╗ ██████╗ ██████╗ ██████╗ ███████╗     ██████╗ ███████╗███╗   ██╗███████╗██████╗  █████╗ ████████╗ ██████╗ ██████╗ 
