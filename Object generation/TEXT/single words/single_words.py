@@ -65,9 +65,7 @@ import bpy
 #____ ____ ___ ___ _ _  _ ____ ____ 
 #[__  |___  |   |  | |\ | | __ [__  
 #___] |___  |   |  | | \| |__] ___] 
-                                   
 #OPENING | https://www.youtube.com/watch?v=qmk3Rri0jsQ&ab_channel=SECRETGUEST
-
 
 font_size = 1.0
 
@@ -86,43 +84,33 @@ font_path = None # Set fonts or use default with None
 #|__] |  | | | | |___ |__/    |__] |    |__| |\ |  |
 #|    |__| |_|_| |___ |  \    |    |___ |  | | \|  |
           
-
 def create_text_objects(word_list, font_size, font_path=None):
-    # Check if the 'texts' collection exists, if not, create it
-    if "texts" not in bpy.data.collections:
+    # Check if the specified collection exists, if not, create it
+    if in_collection not in bpy.data.collections:
         new_collection = bpy.data.collections.new(in_collection)
         bpy.context.scene.collection.children.link(new_collection)
     else:
         new_collection = bpy.data.collections[in_collection]
 
     for i, word in enumerate(word_list):
-        # Create a new text object for each word
-        bpy.ops.object.text_add(location=(i * 2, 0, 0))  # Adjust location if needed
-        text_obj = bpy.context.object
-        text_obj.data.body = word
-
-        # Rename the object to match the word
-        text_obj.name = word
+        # Create a new text object using the low-level API
+        font_curve = bpy.data.curves.new(type="FONT", name=word)
+        font_curve.body = word
+        text_obj = bpy.data.objects.new(name=word, object_data=font_curve)
+        text_obj.location = (i * 1, 0, 0)  # Adjust location if needed
 
         # Set font size
-        text_obj.data.size = font_size
+        font_curve.size = font_size
 
         # Set custom font if a font path is provided
         if font_path:
             try:
                 font = bpy.data.fonts.load(font_path)
-                text_obj.data.font = font
+                font_curve.font = font
             except:
                 print("Error loading font. Using default font.")
 
-        # Move the text object to the 'texts' collection
-        # Remove from all other collections
-        for collection in text_obj.users_collection:
-            collection.objects.unlink(text_obj)
-        
-        # Link the text object to the 'texts' collection
+        # Link the text object to the specified collection
         new_collection.objects.link(text_obj)
-
-
 
 create_text_objects(words, font_size, font_path)
