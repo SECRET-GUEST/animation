@@ -12,9 +12,9 @@
 # Blender 3D File Importer Script
 
 ## Overview
-This script for Blender 4.0 automates the process of importing various 3D file formats. It scans a specified directory and imports all 3D files it can recognize, based on their file extensions. This tool is ideal for streamlining workflows that involve working with multiple 3D files of different formats.
+This script for Blender 4.0 automates the process of importing various 3D file formats. It scans a specified directory and imports all recognizable 3D files based on their file extensions. Ideal for streamlining workflows involving multiple 3D files of different formats, this script also includes options for including subfolders and adding delays between imports to manage large batches of files efficiently.
 
-Not faster than drag & drop you can find on internet, but at least if's free and it works ^^
+While not faster than certain drag & drop solutions available online, it's free and effective.
 
 ## Supported File Formats
 The script supports a wide range of 3D file formats, including but not limited to:
@@ -33,14 +33,22 @@ The script supports a wide range of 3D file formats, including but not limited t
 - VRML97 (`.vrml`, `.wrl`)
 - DXF (`.dxf`)
 
-Please note that some formats may require additional plugins or addons to be installed in Blender.
+Note: Some formats may require additional plugins or addons to be installed in Blender.
 
 ## Installation
 1. Ensure you have Blender 4.0 or newer installed.
 2. Download the `import_3d_files.py` script from this repository.
-3. Open Blender and go to put script in scripting section by drag&drop
+3. Open Blender, go to the scripting section, and drag & drop the script there.
 
-## Modify the `folder_path` variable in the script to the path of your directory containing 3D files.
+## Configuration
+- Modify the `folder_path` variable in the script to the path of your directory containing 3D files.
+- Set `include_subfolders` to `True` if you want to include subfolders in the import process.
+- Adjust `import_delay` to add a delay (in seconds) between each file import, which can be useful for managing large batches of files.
 
-The script will iterate through all files in the specified folder and attempt to import them into the current Blender project. Unsupported file formats or files that lead to import errors will be logged in the console.
+The script will iterate through all files in the specified folder (and subfolders, if enabled) and attempt to import them into the current Blender project. Unsupported file formats or files that lead to import errors will be logged in the console.
+
+## Recommendations
+- Test the script with a small number of files first to ensure compatibility with your Blender setup.
+- For large batches of files, gradually increase the `import_delay` to prevent Blender from becoming unresponsive.
+- Regularly save your Blender project when using this script to import a large number of files.
 
