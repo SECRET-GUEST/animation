@@ -36,12 +36,9 @@ Please note that some formats may require additional plugins or addons to be ins
 ## Installation
 1. Ensure you have Blender 4.0 or newer installed.
 2. Download the `import_3d_files.py` script from this repository.
-3. Open Blender and go to `Edit > Preferences > Add-ons`.
-4. Click `Install` and select the downloaded script.
+3. Open Blender and go to put script in scripting section by drag&drop
 
-## Usage
-1. Modify the `folder_path` variable in the script to the path of your directory containing 3D files.
-2. Run the script in Blender's scripting tab or through the Blender Python console.
+## Modify the `folder_path` variable in the script to the path of your directory containing 3D files.
 
 The script will iterate through all files in the specified folder and attempt to import them into the current Blender project. Unsupported file formats or files that lead to import errors will be logged in the console.
 
