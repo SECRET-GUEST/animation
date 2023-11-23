@@ -14,6 +14,8 @@
 ## Overview
 This script for Blender 4.0 automates the process of importing various 3D file formats. It scans a specified directory and imports all 3D files it can recognize, based on their file extensions. This tool is ideal for streamlining workflows that involve working with multiple 3D files of different formats.
 
+Not faster than drag&drop, but at least if's free and it works ^^
+
 ## Supported File Formats
 The script supports a wide range of 3D file formats, including but not limited to:
 - OBJ (`.obj`)
