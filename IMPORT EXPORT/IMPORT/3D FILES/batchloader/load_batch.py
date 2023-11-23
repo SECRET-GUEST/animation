@@ -60,8 +60,7 @@
 #_ _  _ ____ ___ ____ _    _    ____ ___ _ ____ _  _
 #| |\ | [__   |  |__| |    |    |__|  |  | |  | |\ |
 #| | \| ___]  |  |  | |___ |___ |  |  |  | |__| | \|
-import bpy
-import os
+import time,bpy,os
 
 #____ ____ ___ ___ _ _  _ ____ ____ 
 #[__  |___  |   |  | |\ | | __ [__  
@@ -70,8 +69,9 @@ import os
 #OPENING | https://www.youtube.com/watch?v=qmk3Rri0jsQ&ab_channel=SECRETGUEST
 
 # Path to the folder containing 3D files
-folder_path = 'C:/path/to/the/folder'
-
+folder_path = 'C:/path/to/the/folder' # Replace for your folder path
+include_subfolders = False            # Include subfolders in the folder selected ? 
+import_delay = 0                      # If big amount of files, you want to delay between each import to avoid blender crash
 
 #___  ____ _ _ _ ____ ____    ___  _    ____ _  _ ___
 #|__] |  | | | | |___ |__/    |__] |    |__| |\ |  |
@@ -114,9 +114,14 @@ def import_file(filepath):
             print(f"Unsupported or unrecognized file extension: {extension}")
     except Exception as e:
         print(f"Error importing file {filepath}: {e}")
+    time.sleep(import_delay)  # delay after importing
 
-# Iterate through the folder and import each file
-for filename in os.listdir(folder_path):
-    file_path = os.path.join(folder_path, filename)
-    if os.path.isfile(file_path):
-        import_file(file_path)
+def process_folder(path):
+    for entry in os.scandir(path):
+        if entry.is_file():
+            import_file(entry.path)
+        elif entry.is_dir() and include_subfolders:
+            process_folder(entry.path) 
+
+process_folder(folder_path)
+
