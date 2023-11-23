@@ -16,6 +16,9 @@ This script for Blender 4.0 automates the process of importing various 3D file f
 
 While not faster than certain drag & drop solutions available online, it's free and effective.
 
+[sec.webm](https://github.com/SECRET-GUEST/animation/assets/92639080/4acf6cac-60b0-4269-bf7d-488a9744a7d1)
+
+
 ## Supported File Formats
 The script supports a wide range of 3D file formats, including but not limited to:
 - OBJ (`.obj`)
