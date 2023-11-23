@@ -46,7 +46,7 @@ Note: Some formats may require additional plugins or addons to be installed in B
 - Adjust `import_delay` to add a delay (in seconds) between each file import, which can be useful for managing large batches of files.
 - Configure `include_in_a_single_collection` and `include_in_object_collection` to control how imported objects are organized into collections.
 
-###### note : When both `include_in_a_single_collection` and `include_in_object_collection` are `True`, all objects are imported into a single "imported" collection, with each object also placed in its sub-collection named after the file.
+#### note : When both `include_in_a_single_collection` and `include_in_object_collection` are `True`, all objects are imported into a single "imported" collection, with each object also placed in its sub-collection named after the file.
 
 The script will iterate through all files in the specified folder (and subfolders, if enabled) and attempt to import them into the current Blender project, organizing them into collections based on the configuration. Unsupported file formats or files that lead to import errors will be logged in the console.
 
