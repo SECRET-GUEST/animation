@@ -24,7 +24,7 @@
 #                                 load all your 3D files from a batch faster          |                                           |               |                                           |               |                                           |                    |                                           |
                 
 #                           /                      |    v    |                    \
-#               
+#         https://github.com/SECRET-GUEST/animation/tree/blender/IMPORT%20EXPORT/IMPORT/3D%20FILES/batchloader
 #                                   |                                |                                          |      |                                |                                          |      |                                |                                          |           |                                |
 #                                                                                                    |                                                                 |                      |                     |                       |                      |                     |                       |                      |                     |                            |
 #           
