@@ -75,6 +75,7 @@ number_of_spirals = 3  # Number of spirals
 height = 20  # Height of the spiral
 revolutions = 1  # Number of revolutions
 radius = 0.5  # Initial radius of the spiral
+lenght_between_spirals = 0.1  # Constraint spiral to be closer of the middle
 
 create_pipes = True  # False to not convert spirals to pipes
 
@@ -107,7 +108,7 @@ def create_spirals():
         # Increase radius based on the number of spirals
         # If the number of spirals is greater than 3, increase the initial radius by 0.1 for each additional spiral.
         # This separates the spirals from each other to avoid overlap.
-        spiral_radius = radius + (i - 2) * 0.1 if i >= 3 else radius
+        spiral_radius = radius + (i - 2) * lenght_between_spirals if i >= 3 else radius
         
         curve_data = bpy.data.curves.new(name=f"Spiral{i}", type='CURVE')
         curve_data.dimensions = '3D'
