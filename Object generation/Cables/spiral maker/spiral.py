@@ -75,7 +75,7 @@ number_of_spirals = 3  # Number of spirals
 height = 20  # Height of the spiral
 revolutions = 1  # Number of revolutions
 radius = 0.5  # Initial radius of the spiral
-lenght_between_spirals = 0.1  # Constraint spiral to be closer of the middle
+lenght_between_spirals = 0.1  # Tighten spiral to be closer to the center
 
 create_pipes = True  # False to not convert spirals to pipes
 
