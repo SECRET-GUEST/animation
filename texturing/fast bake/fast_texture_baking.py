@@ -24,7 +24,7 @@
 #                              make a new material from previous one baked fast           |                                           |               |                                           |               |                                           |                    |                                           |
                 
 #                           /                      |    v    |                    \
-#                 
+#                 https://github.com/SECRET-GUEST/animation/tree/blender/texturing/fast%20bake
 #                                   |                                |                                          |      |                                |                                          |      |                                |                                          |           |                                |
 #                                                                                                    |                                                                 |                      |                     |                       |                      |                     |                       |                      |                     |                            |
 #           
