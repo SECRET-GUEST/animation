@@ -12,6 +12,9 @@
 
 This script is designed for Blender and allows users to bake the color of a material onto an object, preserving the appearance of the material even after applying a curve modifier. This is particularly useful for maintaining the appearance of striped or patterned materials on deformed objects.
 
+[fdghdfg.webm](https://github.com/SECRET-GUEST/animation/assets/92639080/e5eb77aa-33f0-44b4-b092-250dd7ed28e0)
+
+
 ## Features
 
 - Bakes the color of a material onto a mesh object.
