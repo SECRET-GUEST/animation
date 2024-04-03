@@ -1,3 +1,6 @@
+# This script will get all datas from images textures with their size and their URL
+# It's useful to optimise size from your textures.
+
 import bpy
 import os
 
