@@ -4,8 +4,8 @@
 import bpy
 import os
 
-# Path where the text file will be saved
-output_file_path = 'YOUR PATH HERE /materials_info.txt'
+# Path to the file where the text will be saved
+output_file_path = 'YOUR-PATH-URL-HERE/materials_info.txt'
 
 def get_image_size(image):
     """ Returns the size of the image in megabytes. """
@@ -17,6 +17,7 @@ def get_image_size(image):
 
 def main():
     total_size_mb = 0
+    total_images_count = 0
     materials_info = []
 
     # Iterate through all materials in the project
@@ -28,19 +29,21 @@ def main():
                     if image:
                         size_mb = get_image_size(image)
                         total_size_mb += size_mb
+                        total_images_count += 1
                         materials_info.append({"name": mat.name, "path": image.filepath, "size": size_mb})
 
     # Sorting the materials by texture size in descending order
     materials_info.sort(key=lambda x: x["size"], reverse=True)
 
     with open(output_file_path, 'w') as file:
+        file.write(f"Total texture size: {total_size_mb:.2f} MB\n")
+        file.write(f"Total number of image textures: {total_images_count}\n\n")
+
         for info in materials_info:
             file.write("-----------------------------------\n")
             file.write(f"Material: {info['name']}\n")
             file.write(f"Texture: {info['path']}\n")
             file.write(f"Size: {info['size']:.2f} MB\n")
-
-        file.write(f"\nTotal texture size: {total_size_mb:.2f} MB\n")
 
 # Execute the main function
 main()
