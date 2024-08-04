@@ -11,7 +11,7 @@
                                                                                                                                     
 ```
 
-# Blender Geometry Nodes Script Exporter
+# Geometry nodes to python script
 
 This repository contains two scripts for working with Geometry Nodes in Blender.
 
