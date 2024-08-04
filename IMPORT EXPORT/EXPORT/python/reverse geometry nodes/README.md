@@ -35,7 +35,7 @@ The script will generate a text file with detailed information about the nodes a
 
 1. Open Blender and load your project.
 2. Copy and paste the `reverse_geometry_nodes` script into Blender's text editor.
-2b. You can also use [this script ](https://github.com/SECRET-GUEST/animation/tree/blender/IMPORT%20EXPORT/IMPORT/3D%20FILES/batchloader) to import faster your scripts ( or set a folder directly in blender's settings) 
+    You can also use [this script ](https://github.com/SECRET-GUEST/animation/tree/blender/IMPORT%20EXPORT/IMPORT/3D%20FILES/batchloader) to import faster your scripts ( or set a folder directly in blender's settings) 
 3. Select the object with the Geometry Nodes modifier applied.
 4. Run the script.
 
