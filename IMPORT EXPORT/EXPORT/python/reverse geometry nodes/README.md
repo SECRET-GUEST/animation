@@ -11,10 +11,12 @@
                                                                                                                                     
 ```
 
-
 # Blender Geometry Nodes Script Exporter
 
 This repository contains two scripts for working with Geometry Nodes in Blender.
+
+
+[1.webm](https://github.com/user-attachments/assets/4f6bca3d-835e-4a19-82c7-56d2fa2d9c57)
 
 
 ## Usage
