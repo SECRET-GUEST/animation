@@ -1,7 +1,19 @@
+[![Blender](https://img.shields.io/badge/Blender-4.2-orange.svg)](https://www.blender.org/download/releases/4-2/)
+[![Python](https://img.shields.io/badge/Python-3.11.7-blue.svg)](https://www.python.org/downloads/release/python-3117/)
+```
+ ██████╗ █████╗ ████████╗███████╗ ██████╗  ██████╗ ██████╗ ██╗███████╗███████╗██████╗ 
+██╔════╝██╔══██╗╚══██╔══╝██╔════╝██╔════╝ ██╔═══██╗██╔══██╗██║╚══███╔╝██╔════╝██╔══██╗
+██║     ███████║   ██║   █████╗  ██║  ███╗██║   ██║██████╔╝██║  ███╔╝ █████╗  ██████╔╝
+██║     ██╔══██║   ██║   ██╔══╝  ██║   ██║██║   ██║██╔══██╗██║ ███╔╝  ██╔══╝  ██╔══██╗
+╚██████╗██║  ██║   ██║   ███████╗╚██████╔╝╚██████╔╝██║  ██║██║███████╗███████╗██║  ██║
+ ╚═════╝╚═╝  ╚═╝   ╚═╝   ╚══════╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚═╝╚══════╝╚══════╝╚═╝  ╚═╝
+```
 
 # Asset Catalog Organizer
 
 This script is designed to help Blender users create and organize asset catalogs using text-based Large Language Models (LLMs). It simplifies the creation of nested categories within Blender's asset library, allowing for better organization and management of assets.
+
+[library_cat.webm](https://github.com/user-attachments/assets/8ec3017a-2688-409e-860f-40d52225ecdc)
 
 ## Features
 
