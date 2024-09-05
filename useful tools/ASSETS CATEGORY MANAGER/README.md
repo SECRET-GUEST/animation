@@ -61,6 +61,7 @@ The script includes predefined categories and subcategories for various asset ty
 - **Characters**:
   - **Humans**: Male, Female, Low poly
   - **Monsters**: Soulslike, Backrooms, Yokais, Entities, Ghosts
+  - **Animals**: Farm, Zoo, Pets, Birds, Reptiles, Fish, Marine Mammals, Insects, Wildlife, Extinct, Mythical Creatures, Fantasy
   - **Clothes**:
     - **Suits**: Armor (Female Top, Female Bottom, Female Sides, Female Helmet, Female Gloves, Male Top, Male Bottom, Male Sides, Male Helmet, Male Gloves), Costumes (Halloween, Cosplay, Fantasy, Historical, Sci-Fi), Swimwear (Bikinis, Swim Shorts, One-Piece, Swim Trunks, Rash Guards), Sportswear (Gym Wear, Running Wear, Yoga Wear, Swimwear, Team Sports), Uniforms (School, Military, Work, Medical, Service), Fantasy Wear (Elven, Warrior, Mage, Rogue, Steampunk, Mecha)
     - **Tops**: T-Shirts, Shirts, Blouses, Sweaters, Jackets
