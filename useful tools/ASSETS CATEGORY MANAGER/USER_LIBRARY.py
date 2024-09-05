@@ -61,6 +61,18 @@ categories = {
         "Characters/Monsters/Entities": [],
         "Characters/Monsters/Ghosts": [],
 
+        "Characters/Animals/Farm": [],
+        "Characters/Animals/Zoo": [],
+        "Characters/Animals/Pets": [],
+        "Characters/Animals/Birds": [],
+        "Characters/Animals/Reptiles": [],
+        "Characters/Animals/Fish": [],
+        "Characters/Animals/Marine Mammals": [],
+        "Characters/Animals/Insects": [],
+        "Characters/Animals/Wildlife": [],
+        "Characters/Animals/Extinct": [],
+        "Characters/Animals/Mythical Creatures": [],
+        "Characters/Animals/Fantasy": [],
 
         "Characters/Clothes/Suits/Armor/Female Top": [],
         "Characters/Clothes/Suits/Armor/Female Bottom": [],
