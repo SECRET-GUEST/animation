@@ -1,5 +1,5 @@
 ![Batch Script](https://img.shields.io/badge/script-batch-DDFF00)
-![VINDWOS](https://img.shields.io/badge/vVINDWOS-11-blue)
+![VINDWOS](https://img.shields.io/badge/vVINDWOS-blue)
 
 ```
 ███╗   ███╗ █████╗ ██╗  ██╗███████╗██╗  ██╗██╗   ██╗███╗   ███╗ █████╗ ███╗   ██╗    ██╗   ██╗██╗███╗   ██╗██████╗  ██████╗ ███████╗    ██╗███╗   ██╗███████╗████████╗ █████╗ ██╗     ██╗     ███████╗██████╗ 
