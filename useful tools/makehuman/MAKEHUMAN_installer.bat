@@ -14,7 +14,7 @@ set /p installPath="Enter the installation path for MakeHuman (e.g., C:\\...\Mak
 
 REM Check if the specified directory exists, otherwise create it
 if not exist "%installPath%" (
-    echo The path does not exist, it will be created.
+    echo The path does not exist; it will be created.
     mkdir "%installPath%"
 )
 
@@ -32,14 +32,24 @@ if not exist "%installPath%\makehuman" (
     exit /b
 )
 
+REM Create a Python virtual environment
+echo Creating Python virtual environment...
+cd /d "%installPath%\makehuman"
+python -m venv venv
+
+REM Activate the virtual environment
+call "%installPath%\makehuman\venv\Scripts\activate.bat"
+
+REM Upgrade pip to the latest version
+python -m pip install --upgrade pip
+
 REM Install Python dependencies from the requirements.txt file
 echo Installing Python dependencies...
-cd /d "%installPath%\makehuman"
 pip install -r requirements.txt
 
 REM Verify if the dependencies installation was successful
 if %errorlevel% neq 0 (
-    echo Error installing Python dependencies. Make sure pip is installed and compatible.
+    echo Error installing Python dependencies. Ensure pip is installed and compatible.
     pause
     exit /b
 )
@@ -51,15 +61,27 @@ if not exist "%installPath%\makehuman\makehuman\plugins" (
 
 REM Download necessary plugins from GitHub
 echo Downloading MHAPI and Asset Downloader plugins...
+
+REM Remove existing plugin directories if they exist
+if exist "%installPath%\makehuman\makehuman\plugins\1_MHAPI" (
+    echo Removing existing 1_MHAPI plugin directory...
+    rmdir /s /q "%installPath%\makehuman\makehuman\plugins\1_MHAPI"
+)
+
+if exist "%installPath%\makehuman\makehuman\plugins\8_assetdownload" (
+    echo Removing existing 8_assetdownload plugin directory...
+    rmdir /s /q "%installPath%\makehuman\makehuman\plugins\8_assetdownload"
+)
+
+REM Clone the plugins from GitHub
 git clone https://github.com/makehumancommunity/community-plugins-mhapi.git "%installPath%\makehuman\makehuman\plugins\1_MHAPI"
 git clone https://github.com/makehumancommunity/community-plugins-assetdownload.git "%installPath%\makehuman\makehuman\plugins\8_assetdownload"
 
-REM Set PYTHONPATH to include MakeHuman directories
+REM Compile models, proxies, and targets
 cd /d "%installPath%\makehuman\makehuman"
 
-REM Compile models, proxies, and targets
 echo Compiling models...
-call python compile_models.py
+python compile_models.py
 if %errorlevel% neq 0 (
     echo Error compiling models.
     pause
@@ -67,7 +89,7 @@ if %errorlevel% neq 0 (
 )
 
 echo Compiling proxies...
-call python compile_proxies.py
+python compile_proxies.py
 if %errorlevel% neq 0 (
     echo Error compiling proxies.
     pause
@@ -75,22 +97,28 @@ if %errorlevel% neq 0 (
 )
 
 echo Compiling targets...
-call python compile_targets.py
+python compile_targets.py
 if %errorlevel% neq 0 (
     echo Error compiling targets.
     pause
     exit /b
 )
 
-cd /d "%installPath%"
+REM Deactivate the virtual environment
+call "%installPath%\makehuman\venv\Scripts\deactivate.bat"
 
+cd /d "%installPath%"
 
 REM Create a batch file to launch MakeHuman
 echo Creating a batch file to launch MakeHuman...
 (
     echo @echo off
+    echo REM Activate the virtual environment
+    echo call "%installPath%\makehuman\venv\Scripts\activate.bat"
     echo cd /d "%installPath%\makehuman\makehuman"
     echo python makehuman.py
+    echo REM Deactivate the virtual environment
+    echo call "%installPath%\makehuman\venv\Scripts\deactivate.bat"
     echo exit
 ) > "%installPath%\makehuman\makehuman.bat"
 
@@ -119,11 +147,12 @@ echo oLink.WorkingDirectory ="%installPath%\makehuman"
 echo oLink.Save
 ) > createShortcut.vbs
 
+REM Run the VBScript to create the shortcut
 cscript //nologo createShortcut.vbs
-del createShortcut.vbs
-goto end
 
-:end
+REM Delete the temporary VBScript file
+del createShortcut.vbs
+
 echo Shortcut created successfully on your desktop.
 echo Installation complete.
 pause
