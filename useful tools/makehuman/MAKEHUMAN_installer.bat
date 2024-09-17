@@ -55,9 +55,35 @@ git clone https://github.com/makehumancommunity/community-plugins-mhapi.git "%in
 git clone https://github.com/makehumancommunity/community-plugins-assetdownload.git "%installPath%\makehuman\makehuman\plugins\8_assetdownload"
 
 REM Set PYTHONPATH to include MakeHuman directories
-python makehuman/makehuman/compile_models.py
-python makehuman/makehuman/compile_proxies.py
-python makehuman/makehuman/compile_targets.py
+cd /d "%installPath%\makehuman\makehuman"
+
+REM Compile models, proxies, and targets
+echo Compiling models...
+call python compile_models.py
+if %errorlevel% neq 0 (
+    echo Error compiling models.
+    pause
+    exit /b
+)
+
+echo Compiling proxies...
+call python compile_proxies.py
+if %errorlevel% neq 0 (
+    echo Error compiling proxies.
+    pause
+    exit /b
+)
+
+echo Compiling targets...
+call python compile_targets.py
+if %errorlevel% neq 0 (
+    echo Error compiling targets.
+    pause
+    exit /b
+)
+
+cd /d "%installPath%"
+
 
 REM Create a batch file to launch MakeHuman
 echo Creating a batch file to launch MakeHuman...
