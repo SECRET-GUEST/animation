@@ -86,108 +86,75 @@ clear_unused_node_groups = 'y'
 #|    |__| |_|_| |___ |  \    |    |___ |  | | \|  |
                 
 
-
 def clear_simulation_caches():
-    # Clear Particle System Caches
+    """Efface les caches des simulations (fluides, particules, rigid body, etc.)."""
     for obj in bpy.data.objects:
         for modifier in obj.modifiers:
-            if modifier.type == 'PARTICLE_SYSTEM':
-                modifier.particle_system.point_cache.frame_start = bpy.context.scene.frame_start
-
-    # Clear Fluid Simulation Caches
-    for obj in bpy.data.objects:
-        for modifier in obj.modifiers:
-            if modifier.type == 'FLUID':
-                if modifier.fluid_type == 'DOMAIN':
-                    for cache in modifier.domain_settings.cache_settings.cache_file_format:
-                        cache.use_external = False
-
-    # Clear Smoke and Gas Simulation Caches
-    for obj in bpy.data.objects:
-        for modifier in obj.modifiers:
-            if modifier.type == 'FLUID':
-                if modifier.fluid_type == 'DOMAIN' and modifier.domain_settings.domain_type == 'GAS':
-                    for cache in modifier.domain_settings.cache_settings.cache_file_format:
-                        cache.use_external = False
-
-    # Clear Cloth and Soft Body Simulation Caches
-    for obj in bpy.data.objects:
-        for modifier in obj.modifiers:
-            if modifier.type in {'CLOTH', 'SOFT_BODY'}:
+            if modifier.type in {'PARTICLE_SYSTEM', 'CLOTH', 'SOFT_BODY'}:
                 modifier.point_cache.frame_start = bpy.context.scene.frame_start
 
-    # Clear Rigid Body World Cache
+            if modifier.type == 'FLUID' and modifier.fluid_type == 'DOMAIN':
+                modifier.domain_settings.cache_frame_start = bpy.context.scene.frame_start
+
+    # Effacer le cache de la simulation de rigidité
     if bpy.context.scene.rigidbody_world:
         bpy.ops.ptcache.free_bake_all()
 
 
 def clear_all_keyframes():
-    # Clear keyframes from all objects
-    for obj in bpy.data.objects:
-        if obj.animation_data:
-            obj.animation_data_clear()
-
-    # Clear keyframes from all materials
-    for mat in bpy.data.materials:
-        if mat.animation_data:
-            mat.animation_data_clear()
-
-    # Clear keyframes from all curves
-    for curve in bpy.data.curves:
-        if curve.animation_data:
-            curve.animation_data_clear()
-
-    # Clear keyframes from all cameras
-    for cam in bpy.data.cameras:
-        if cam.animation_data:
-            cam.animation_data_clear()
-
-    # Clear keyframes from all lights
-    for light in bpy.data.lights:
-        if light.animation_data:
-            light.animation_data_clear()
+    """Supprime toutes les keyframes des objets, matériaux, courbes, caméras et lumières."""
+    for data_block in [bpy.data.objects, bpy.data.materials, bpy.data.curves, bpy.data.cameras, bpy.data.lights]:
+        for item in data_block:
+            if item.animation_data:
+                item.animation_data_clear()
 
 
 def clear_unused_data_block(data_block):
-    for item in data_block:
+    """Supprime les blocs de données inutilisés."""
+    for item in list(data_block):  # Utilisation de `list()` pour éviter des erreurs de suppression
         if item.users == 0:
             data_block.remove(item)
 
+
 def clear_orphaned_data():
-    for block_type in [bpy.data.meshes, bpy.data.materials, bpy.data.textures, bpy.data.images, bpy.data.node_groups]:
-        for block in block_type:
-            if block.users == 0:
-                block_type.remove(block)
+    """Supprime les éléments orphelins sans utilisateurs."""
+    orphan_blocks = [bpy.data.meshes, bpy.data.materials, bpy.data.textures, bpy.data.images, bpy.data.node_groups]
+    for block_type in orphan_blocks:
+        clear_unused_data_block(block_type)
 
 
 def clear_uv_maps():
+    """Supprime les UV maps inutilisées dans tous les objets MESH."""
     for obj in bpy.data.objects:
         if obj.type == 'MESH' and obj.data.uv_layers:
             used_uv_maps = set()
-            # Collect all UV Map names used in material slots
+
+            # Récupérer les noms d'UV utilisés dans les matériaux
             for mat_slot in obj.material_slots:
                 if mat_slot.material and mat_slot.material.use_nodes:
                     for node in mat_slot.material.node_tree.nodes:
-                        if node.type == 'UVMAP':
-                            used_uv_maps.add(node.uv_map)
-            # Remove unused UV Maps
-            for uv_map in obj.data.uv_layers:
+                        if node.type == 'UVMAP' and hasattr(node, "uv_map") and node.uv_map:
+                            uv_name = node.uv_map
+                            if isinstance(uv_name, bytes):  # Vérifie si c'est en bytes
+                                uv_name = uv_name.decode('utf-8')
+                            used_uv_maps.add(uv_name)
+
+            # Supprimer les UV non utilisées
+            for uv_map in list(obj.data.uv_layers):  # Sécuriser l'itération
                 if uv_map.name not in used_uv_maps:
-                    obj.data.uv_layers.remove(uv_map)
+                    if uv_map.name in obj.data.uv_layers:  # Vérifier si elle existe encore
+                        obj.data.uv_layers.remove(uv_map)
+
 
 
 def clear_unused_nodes():
-    # Clear unused node groups
-    for group in bpy.data.node_groups:
+    """Supprime les groupes de nœuds inutilisés."""
+    for group in list(bpy.data.node_groups):  # Sécuriser la suppression
         if group.users == 0:
             bpy.data.node_groups.remove(group)
 
 
-
-
-
-
-# Apply the cleanup based on settings
+# Exécuter les fonctions de nettoyage en fonction des paramètres définis
 if clear_unused_materials == 'y':
     clear_unused_data_block(bpy.data.materials)
     
@@ -217,3 +184,4 @@ if clear_caches == 'y':
 
 if clear_keyframes == 'y':
     clear_all_keyframes()
+
