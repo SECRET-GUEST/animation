@@ -11,7 +11,7 @@
 
 This repository contains a collection of scripts for generating 3D and 2D objects in various creative software, such as Blender, Unreal Engine, Adobe Suite, RPG Maker, and more. The scripts are designed to help artists and developers quickly create assets for their projects.
 
-Testez vos animations FBX/GLB sur le viewer : https://secret-guest.github.io/3D-viewer/ • Code : https://github.com/SECRET-GUEST/3D-viewer
+Vous pouvez tester vos animations FBX/GLB dans le [3D Viewer](https://secret-guest.github.io/3D-viewer/). Le code source est également [disponible ici.](https://github.com/SECRET-GUEST/3D-viewer)
 
 ## :art: Features
 
