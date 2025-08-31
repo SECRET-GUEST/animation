@@ -10,7 +10,8 @@
 # Scripts for 3D and 2D Object Generation,and lot more
 
 This repository contains a collection of scripts for generating 3D and 2D objects in various creative software, such as Blender, Unreal Engine, Adobe Suite, RPG Maker, and more. The scripts are designed to help artists and developers quickly create assets for their projects.
-Most of the script was made with the help of GPT-4, great thanks OpenAI for that help !
+
+Testez vos animations FBX/GLB sur le viewer : https://secret-guest.github.io/3D-viewer/ • Code : https://github.com/SECRET-GUEST/3D-viewer
 
 ## :art: Features
 
