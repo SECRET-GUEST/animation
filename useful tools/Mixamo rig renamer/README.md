@@ -1,4 +1,4 @@
-![Blender](https://img.shields.io/badge/Blender-4.5-orange?style=flat-square\&logo=blender)
+![Blender](https://img.shields.io/badge/Blender-4.5-orange?\&logo=blender)
 
 ```markdown
 ██████╗ ██╗ ██████╗     ██████╗ ███████╗███╗   ██╗ █████╗ ███╗   ███╗███████╗██████╗ 
@@ -10,6 +10,8 @@
 ```
 
 ## Mixamo rig renamer
+
+![1](https://github.com/user-attachments/assets/e4999c9c-d36e-42af-937c-8200084ecebb)
 
 This script automatically renames **Mixamo rigs** inside Blender to use the standard
 `.L / .R` naming convention.
@@ -63,3 +65,4 @@ This script fixes that in **one click** (bones + vertex groups).
   * `Ctrl+C` → Copy pose
   * `Ctrl+Shift+V` → Paste mirrored pose
   * Works in **animation keyframes** as well.
+
