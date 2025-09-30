@@ -1,5 +1,4 @@
-[![Blender](https://img.shields.io/badge/Blender-4.5-orange.svg)](https://www.blender.org/download/releases/4-5/)
-[![Python](https://img.shields.io/badge/Python-3.11.7-blue.svg)](https://www.python.org/downloads/release/python-3117/)
+![Blender](https://img.shields.io/badge/Blender-4.5-orange?\&logo=blender)
 ```
 ██████╗ ██╗     ███████╗███╗   ██╗██████╗ ███████╗██████╗ 
 ██╔══██╗██║     ██╔════╝████╗  ██║██╔══██╗██╔════╝██╔══██╗
